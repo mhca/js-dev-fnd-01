@@ -1,0 +1,35 @@
+<!-- simple-todos.html -->
+<head>
+  <title>Todo List</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Course Summary</h1>
+
+
+    </header>
+
+    <ul>
+      We're here to get you started with JavaScript! In the twenty plus years since its inception, JavaScript has become the lingua franca of the web, that's to say, it's become the main tool to create interactive content on the Internet.
+
+In this course, you'll explore the JavaScript programming language by creating an interactive version of your résumé. You’ll learn the JavaScript programming fundamentals you need while building new elements and sections to enhance your résumé.
+    </ul>
+   <header>
+      <h1>Course Summary</h1>
+
+
+    </header>
+
+    <ul>
+      We're here to get you started with JavaScript! In the twenty plus years since its inception, JavaScript has become the lingua franca of the web, that's to say, it's become the main tool to create interactive content on the Internet.
+
+In this course, you'll explore the JavaScript programming language by creating an interactive version of your résumé. You’ll learn the JavaScript programming fundamentals you need while building new elements and sections to enhance your résumé.
+    </ul>
+  </div>
+</body>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
