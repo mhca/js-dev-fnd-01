@@ -2,6 +2,10 @@
  * Created by heimy on 12-06-15.
  */
 
+/**
+ * This is the main function which calls other functions
+ * to execute basic operations
+ */
 var calculateAll = function(){
     console.log('The Minimum number is: ', findMin(arguments));
     console.log('The Maximum number is: ', findMax(arguments));
