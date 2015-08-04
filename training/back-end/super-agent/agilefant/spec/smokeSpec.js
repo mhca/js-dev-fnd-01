@@ -44,7 +44,7 @@ describe('Teams', function(){
             })
     });
 
-    it('should display a team item according to provided id', function(done){
+    xit('should display a team item according to provided id', function(done){
         var teamId = 26419;
         request
             .get('https://cloud.agilefant.com/'+ username +'/api/v1/teams/' + teamId + '?templates=Summary')
@@ -56,4 +56,17 @@ describe('Teams', function(){
                 done();
             })
     });
+});
+
+describe('users',function(){
+   it('should be listed', function(done){
+       request
+           .get('https://cloud.agilefant.com/'+ username +'/api/v1/users/all?templates=Summary')
+           .set('Authorization',authorization)
+           .end(function(error, response) {
+               console.log('Response status code: ' + response.statusCode);
+               expect(response.statusCode).toBe(200);
+               done();
+           })
+   })
 });
